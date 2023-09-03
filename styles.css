@@ -1,0 +1,125 @@
+
+:root {
+
+    --main-backgrond: hsl(233, 47%, 7%);
+    --card-barckground: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+
+    --main-heading-stats: hsl(0, 0%, 100%);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat-headings: hsla(0, 0%, 100%, 0.6);
+
+    --fs-primary: 15px;
+    --ff-Inter: 'Inter', sans-serif;
+    --ff-Lexend-Deca: 'Lexend Deca', sans-serif;
+
+    --fw-normal: 400;
+    --fw-bold: 700;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+
+    font-family: var(--ff-Inter);
+    font-weight: var(--fw-bold);
+}
+
+p{  
+    font-weight: var(--fw-normal);
+}
+
+.accent{
+    color: var(--accent);
+}
+
+h1{
+    color: var(--main-heading-stats);
+    margin-bottom: 20px;
+}
+h3{
+    color: var(--main-heading-stats);
+}
+p{
+    color: var(--main-paragraph);
+}
+
+main{
+    font-size: var(--fs-primary);
+    background-color: var(--main-backgrond);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card{
+    background-color: var(--card-barckground);
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    max-width: 445px;
+    
+}
+
+
+.information{
+flex: 6;
+padding: 15px;
+display: flex;
+flex-direction: column;
+gap: 30px;
+text-align: center;
+
+}
+
+.principal-information{
+
+    flex: 1;
+}
+
+.second-information{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+
+.img-container{
+    overflow:hidden ;
+    flex:4;
+    max-height: 247.3px;
+    min-height: 170px;
+    background-color:#782da3;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.img-container img{
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen al ancho del div */
+    min-width: 100%;
+    max-height: 100%; /* Ajusta la altura máxima de la imagen a la altura del div */
+    min-height: 240px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 0.4; /* Ajusta la opacidad según lo necesites */
+    
+    
+}
+
+
+
